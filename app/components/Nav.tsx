@@ -9,7 +9,13 @@ const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-100 px-6 py-4 shadow-md">
+   <nav
+  className="bg-gray-100 px-6 py-4 shadow-md relative"
+  style={{
+    clipPath: 'polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%)'
+  }}
+>
+
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo & Title */}
         <div className="flex items-center gap-4">
@@ -18,7 +24,7 @@ const Nav = () => {
             alt="Main Street Grill Logo"
             width={150}
             height={150}
-            className="rounded-full w-16 h-16 lg:w-24 lg:h-24 object-cover"
+            className="m-rounded-full w-16 h-16 lg:w-24 lg:h-24 object-cover"
             draggable={false}
           />
           <div className="text-2xl lg:text-4xl font-bold text-red-900 drop-shadow-md">
