@@ -24,7 +24,7 @@ const Nav = () => {
             alt="Main Street Grill Logo"
             width={150}
             height={150}
-            className="m-rounded-full w-16 h-16 lg:w-24 lg:h-24 object-cover"
+            className="m-2 rounded-full w-16 h-16 lg:w-24 lg:h-24 object-cover"
             draggable={false}
           />
           <div className="text-2xl lg:text-4xl font-bold text-red-900 drop-shadow-md">
