@@ -1,40 +1,24 @@
-'use client'
+"use client";
 
 import Nav from "./components/Nav";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
-
 export default function Home() {
-  const parallaxRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (parallaxRef.current) {
-        const offset = window.scrollY;
-        parallaxRef.current.style.backgroundPositionY = `${offset * 0.5}px`;
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <>
       <div>
         <Nav />
       </div>
-      {/* Parallax background */}
+
+      {/* Parallax section */}
       <div
-        ref={parallaxRef}
-        className="relative w-full h-[500px] overflow-hidden"
-        style={{
-          backgroundImage: "url('/sandwitch.jpg')",
-          backgroundSize: "cover",
-          backgroundAttachment: "scroll",
-          backgroundPosition: "center",
-        }}
+       className="relative h-[75vh] bg-fixed bg-center bg-cover"
+        style={{ backgroundImage: 'url("/sandwitch.jpg")' }}
       >
-        {/* Optional: Overlay or content */}
+        <div className="absolute inset-0  flex items-center justify-center">
+          <h1 className="text-white text-4xl font-bold">
+            Welcome to Our Terrace
+          </h1>
+        </div>
       </div>
       <div className="inset-0 ">
         Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -85,6 +69,17 @@ export default function Home() {
         amet...' Donate: If you use this site regularly and would like to help
         keep the site on the Internet, please consider donating a small sum to
         help pay for the hosting and bandwidth bill. There is no minimum
+        donation, any sum is appreciated - click here to donate using PayPal.
+        Thank you for your support. Donate bitcoin:
+        16UQLq1HZ3CNwhvgrarV6pMoA2CDjb4tyF Translations: Can you help translate
+        this site into a foreign language ? Please email us with details if you
+        can help. with a handful of model sentence structures, to generate Lorem
+        Ipsum which looks reasonable. The generated Lorem Ipsum is therefore
+        always free from repetition, injected humour, or non-characteristic
+        words etc. 5 paragraphs words bytes lists Start with 'Lorem ipsum dolor
+        sit amet...' Donate: If you use this site regularly and would like to
+        help keep the site on the Internet, please consider donating a small sum
+        to help pay for the hosting and bandwidth bill. There is no minimum
         donation, any sum is appreciated - click here to donate using PayPal.
         Thank you for your support. Donate bitcoin:
         16UQLq1HZ3CNwhvgrarV6pMoA2CDjb4tyF Translations: Can you help translate
