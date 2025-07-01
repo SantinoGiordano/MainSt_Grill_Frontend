@@ -28,15 +28,25 @@ const Nav = () => {
 
         {/* Desktop Links */}
         <div className="hidden lg:flex items-center gap-6">
-          {["Home", "Menu", "Weekly Specials", "Catering", "Events", "Contact"].map((item) => (
-            <Link
-              key={item}
-              href="/"
-              className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors border-b-2 border-transparent hover:border-red-600"
-            >
-              {item}
-            </Link>
-          ))}
+          {["Home", "Menu", "Weekly Specials", "Catering", "Events", "Contact"].map(
+            (item) => (
+              <Link
+                key={item}
+                href="/"
+                className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors border-b-2 border-transparent hover:border-red-600"
+              >
+                {item}
+              </Link>
+            )
+          )}
+          <Link
+            href="https://order.online/store/main-street-deli-restaurant-&-catering-agawam-25125723/?hideModal=true&pickup=true"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors border-b-2 border-transparent hover:border-red-600"
+          >
+            Order Online
+          </Link>
         </div>
 
         {/* Burger icon on smaller than lg */}
@@ -53,16 +63,27 @@ const Nav = () => {
       {/* Dropdown Links on mobile & tablet */}
       {menuOpen && (
         <div className="lg:hidden mt-4 flex flex-col gap-4 items-center">
-          {["Home", "Menu", "Weekly Specials", "Catering", "Events", "Contact"].map((item) => (
-            <Link
-              key={item}
-              href="/"
-              className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors"
-              onClick={() => setMenuOpen(false)}
-            >
-              {item}
-            </Link>
-          ))}
+          {["Home", "Menu", "Weekly Specials", "Catering", "Events", "Contact"].map(
+            (item) => (
+              <Link
+                key={item}
+                href="/"
+                className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors"
+                onClick={() => setMenuOpen(false)}
+              >
+                {item}
+              </Link>
+            )
+          )}
+          <Link
+            href="https://order.online/store/main-street-deli-restaurant-&-catering-agawam-25125723/?hideModal=true&pickup=true"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors"
+            onClick={() => setMenuOpen(false)}
+          >
+            Order Online
+          </Link>
         </div>
       )}
     </nav>
@@ -70,3 +91,11 @@ const Nav = () => {
 };
 
 export default Nav;
+
+{/* <Link
+  href="https://order.online/store/main-street-deli-restaurant-&-catering-agawam-25125723/?hideModal=true&pickup=true"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Order Online
+</Link>; */}
