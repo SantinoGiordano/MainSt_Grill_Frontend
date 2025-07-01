@@ -12,26 +12,43 @@ const footer = () => {
               CLICK HERE
             </Link>{" "}
             For Driving Directions
+            <p>
+              Free Parking / Outdoor Patio (Seasonal)/ Private Room Available
+            </p>
+            <p>Location: 141 Main Street Agawam MA 01001</p>
           </div>
-          <div className="m-5 max-w-3/5 flex-1 flex justify-center items-center bg-black text-white py-4">
-            <form>
-              Email:<br></br>
-              <input
-                required
-                type="email"
-                placeholder="Enter your email for updates"
-                className="p-2 bg-white text-black rounded-l-md w-64 md:w-80"
-              />
-              Name:
-              <input
-                className="p-2 bg-white text-black rounded-l-md w-64 md:w-80"
-                type="text"
-                placeholder="Enter your name"
-                required
-              />
+          <div className="m-5 flex-1 flex justify-center items-center bg-gray-400 text-white py-6 rounded-md shadow">
+            <form className="flex flex-col gap-3 w-full max-w-md px-4">
+              <div className="flex flex-col">
+                <label htmlFor="email" className="mb-1 text-sm font-medium">
+                  Email
+                </label>
+                <input
+                  id="email"
+                  required
+                  type="email"
+                  placeholder="you@example.com"
+                  className="p-2 rounded border bg-white border-gray-300 text-black focus:outline-none focus:ring-2 focus:ring-red-400 transition"
+                />
+              </div>
+              <div className="flex flex-col">
+                <label htmlFor="name" className="mb-1 text-sm font-medium">
+                  Name
+                </label>
+                <input
+                  id="name"
+                  type="text"
+                  placeholder="Your name"
+                  required
+                  className="p-2 rounded border bg-white border-gray-300 text-black focus:outline-none focus:ring-2 focus:ring-red-400 transition"
+                />
+              </div>
               <button
                 type="submit"
-                className="bg-red-600 text-white px-4 py-2 rounded-r-md hover:bg-red-700 transition-colors"></button>
+                className="mt-1 bg-red-500 hover:bg-red-600 text-white text-sm font-medium py-2 rounded transition-colors"
+              >
+                Subscribe
+              </button>
             </form>
           </div>
         </div>
