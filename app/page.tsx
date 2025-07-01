@@ -4,10 +4,10 @@ import { useState } from "react";
 import Nav from "./components/Nav";
 import Image from "next/image";
 import Link from "next/link";
-import buttonsHomePage from "./Data/buttonsHomePage";
+import buttonsHomePage from "@/Data/buttonsHomePage";
 export default function Home() {
 
-const [items, setItems] = useState([""])
+// const [items, setItems] = useState([""])
   
   return (
     <>
@@ -30,18 +30,23 @@ const [items, setItems] = useState([""])
           </div>
         </div>
       </div>
+    <hr className="border-t-2 border-red-950 my-8 ml-10 mr-10"/>
+    <div className="flex flex-wrap justify-center gap-4 mt-8 px-4 pt-10">
+  {buttonsHomePage.length > 0 ? (
+    buttonsHomePage.map((item, index) => (
+      <Link 
+        key={index}
+        href={item.address}
+        className="w-48 h-20 flex items-center justify-center bg-red-950 text-white text-xl px-6 py-3 rounded shadow hover:bg-red-800 transition duration-300 text-center"
+      >
+        {item.name}
+      </Link>
+    ))
+  ) : (
+    <p className="text-center text-gray-500">No buttons available.</p>
+  )}
+</div>
 
-      <div>
-        {buttonsHomePage.map((item, index) => (
-          <Link 
-            key={index} 
-            className="p-4"
-            href={item.address}
-          >
-            {item.name}
-          </Link>
-        ))}
-      </div>
     </>
   );
 }
