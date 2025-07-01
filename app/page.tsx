@@ -5,19 +5,23 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <div>
-        <Nav />
-      </div>
-
-      {/* Parallax section */}
       <div
-       className="relative h-[75vh] bg-fixed bg-center bg-cover"
+        className="relative h-[75vh] bg-fixed bg-center bg-cover"
         style={{ backgroundImage: 'url("/sandwitch.jpg")' }}
       >
-        <div className="absolute inset-0  flex items-center justify-center">
-          <h1 className="text-white text-4xl font-bold">
-            Welcome to Our Terrace
-          </h1>
+        <Nav/>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="flex flex-col items-center justify-center bg-gray-100 bg-opacity-50 p-6 rounded-md shadow-lg">
+            <p className="text-2xl md:text-3xl font-bold text-white bg-red-950 px-6 py-4 rounded tracking-wide leading-relaxed">
+              Open Monday - Saturday
+            </p>
+            <p className="text-xl md:text-2xl mt-2 tracking-wide leading-relaxed">
+              10AM - 6PM
+            </p>
+            <p className="text-lg md:text-xl mt-1 tracking-wide leading-relaxed">
+              Temporarily Closed Sundays
+            </p>
+          </div>
         </div>
       </div>
       <div className="inset-0 ">
