@@ -10,7 +10,7 @@ const Nav = () => {
 
   return (
    <nav
-  className="bg-gray-100 px-6 py-4 shadow-md relative"
+  className="bg-gray-200 w-screen px-6 py-4 shadow-md  absolute z-100"
   style={{
     clipPath: 'polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%)'
   }}
