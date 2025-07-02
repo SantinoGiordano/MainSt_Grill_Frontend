@@ -20,8 +20,8 @@ export default function Home() {
       </Head>
       <div
         className="relative h-[75vh] bg-fixed bg-center bg-cover"
-        style={{ backgroundImage: 'url("/sandwitch.jpg")' }}
-      >
+       style={{ backgroundImage: 'url("/centerStringSandwitch.jpg")' }}>
+
 
         <div
           style={{ fontFamily: "Playfair Display, serif" }}
