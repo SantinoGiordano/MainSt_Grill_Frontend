@@ -100,6 +100,7 @@ const Nav = () => {
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className="text-gray-800 hover:text-red-600 focus:outline-none"
+              aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
             >
               {menuOpen ? <X size={32} /> : <Menu size={32} />}
             </button>
