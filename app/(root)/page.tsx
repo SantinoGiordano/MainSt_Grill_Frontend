@@ -7,6 +7,11 @@ export default function Home() {
   return (
     <>
       <Head>
+        <title>Main Street Grill</title>
+        <meta
+          name="description"
+          content="Main Street Grill in Agawam, MA. Open Monday-Saturday."
+        ></meta>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -17,12 +22,11 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet"
         />
-      </Head>
+      </Head> 
       <div
         className="relative h-[75vh] bg-fixed bg-center bg-cover"
-       style={{ backgroundImage: 'url("/centerStringSandwitch.jpg")' }}>
-
-
+        style={{ backgroundImage: 'url("/centerStringSandwitch.jpg")' }}
+      >
         <div
           style={{ fontFamily: "Playfair Display, serif" }}
           className="absolute inset-0 flex items-center justify-center fontFamily-playfair"
@@ -41,8 +45,7 @@ export default function Home() {
         </div>
       </div>
       <hr className="border-t-2 border-red-950 my-8 ml-10 mr-10" />
-      <div 
-      className="flex flex-wrap justify-center gap-4 mt-8 px-4 pt-10">
+      <div className="flex flex-wrap justify-center gap-4 mt-8 px-4 pt-10">
         {buttonsHomePage.length > 0 ? (
           buttonsHomePage.map((item, index) => (
             <Link
@@ -57,10 +60,7 @@ export default function Home() {
           <p className="text-center text-gray-500">No buttons available.</p>
         )}
       </div>
-      <div
-      className="p-10">
-
-      </div>
+      <div className="p-10"></div>
     </>
   );
 }
