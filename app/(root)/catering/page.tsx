@@ -19,6 +19,8 @@ export default function Catering() {
           <div className="w-[35vh] flex items-center justify-center">
             <div className="w-full h-full">
               <Image
+                loading="lazy"
+                draggable={false}
                 src="/cateringImg.jpg"
                 alt="Catering"
                 width={500}
@@ -37,6 +39,8 @@ export default function Catering() {
                 Click Here to Check Out Our Catering Menu
               </Link>
               <Image
+                loading="lazy"
+                draggable={false}
                 alt="Catering"
                 className="mx-auto"
                 src="/cateringMenuImg.avif"
