@@ -80,7 +80,7 @@ const Nav = () => {
               Events
             </Link>
             <Link
-              href="/Contact"
+              href="/contact"
               className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors border-b-2 border-transparent hover:border-red-600"
             >
               Contact
@@ -108,7 +108,7 @@ const Nav = () => {
         </div>
 
         {menuOpen && (
-          <div className="lg:hidden mt-4 flex flex-col gap-4 items-center">
+          <div className="p-10 lg:hidden mt-4 flex flex-col gap-4 items-center">
             <Link
               href="/"
               className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors"
@@ -141,7 +141,7 @@ const Nav = () => {
               Events
             </Link>
             <Link
-              href="/Contact"
+              href="/contact"
               className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors "
             >
               Contact
