@@ -74,7 +74,7 @@ const Nav = () => {
               Catering
             </Link>
             <Link
-              href="/events"
+              href="/event"
               className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors border-b-2 border-transparent hover:border-red-600"
             >
               Events
