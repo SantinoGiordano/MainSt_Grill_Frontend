@@ -5,50 +5,59 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <Head>\
-        <meta name="description" content="this site is the landing page for 141 Main Street Grill and sandwitches."></meta>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin=""
+      <Head>
+        <meta
+          name="description"
+          content="this site is the landing page for 141 Main Street Grill and sandwiches."
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
       </Head>
-      <div
+      <footer
         style={{ fontFamily: "Playfair Display, serif" }}
-        className="bg-gray-200 "
+        className="bg-gray-300 text-black pt-10"
       >
-        <div className="flex flex-col md:flex-row">
-          <div className="p-10 flex-1 text-center justify-right">
-            <p>Call After 3PM (413) 821-9881</p>
-            <Link
-              className="text-red-700 hover:text-red-500 transition-colors"
-              href="https://www.google.com/maps/dir//141+Main+St,+Agawam,+MA+01001/@42.0868178,-72.6236348,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89e6e14953533dcf:0x7139b8644421c379!2m2!1d-72.6214461!2d42.0868178"
-              aria-label="Driving directions to Main Street Grill"
-            >
-              CLICK HERE
-            </Link>{" "}
-            For Driving Directions
-            <p>
-              Free Parking / Outdoor Patio (Seasonal)/ Private Room Available
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10 px-6 pb-10 border-b border-slate-600">
+          {/* Contact Info */}
+          <div className="flex-1 space-y-4 md:pr-8">
+            <h3 className="text-2xl font-semibold tracking-wide mb-2 border-b border-red-950 inline-block pb-1">
+              Visit Us
+            </h3>
+            <p className="text-lg">
+              Call After 3PM <span className="font-bold">(413) 821-9881</span>
             </p>
-            <p>Location: 141 Main Street Agawam MA 01001</p>
+            <p className="text-lg">
+              <Link
+                href="https://www.google.com/maps/dir//141+Main+St,+Agawam,+MA+01001"
+                className="text-red-400 hover:text-red-200 transition"
+                target="_blank"
+              >
+                Click here
+              </Link>{" "}
+              for Driving Directions
+            </p>
+            <p className="text-lg">
+              Free Parking / Outdoor Patio (Seasonal) / Private Room Available
+            </p>
+            <p className="text-lg">141 Main Street, Agawam, MA 01001</p>
           </div>
-          <div className="m-5 flex-1 flex justify-center items-center bg-gray-400 text-white py-6 rounded-md shadow">
-            <form className="flex flex-col gap-3 w-full max-w-md px-4">
+
+          {/* Signup Form */}
+          <div className="flex-1">
+            <h3 className="text-2xl font-semibold tracking-wide mb-4 border-b border-red-600 inline-block pb-1">
+              Stay Updated
+            </h3>
+            <form className="flex flex-col gap-4 w-full max-w-md">
               <div className="flex flex-col">
-                <div className="text-white text-lg md:text-xl font-semibold text-center mb-2">
-                  Sign Up to receive email coupons &amp; updates
-                </div>
                 <label htmlFor="email" className="mb-1 text-sm font-medium">
                   Email
                 </label>
                 <input
                   id="email"
-                  required
                   type="email"
+                  required
                   placeholder="you@example.com"
-                  className="p-2 rounded border bg-white border-gray-300 text-black focus:outline-none focus:ring-2 focus:ring-red-400 transition"
+                  className="p-3 rounded border border-gray-400 bg-white text-black focus:outline-none focus:ring-2 focus:ring-red-500 transition"
                 />
               </div>
               <div className="flex flex-col">
@@ -58,30 +67,26 @@ const Footer = () => {
                 <input
                   id="name"
                   type="text"
-                  placeholder="Your name"
                   required
-                  className="p-2 rounded border bg-white border-gray-300 text-black focus:outline-none focus:ring-2 focus:ring-red-400 transition"
+                  placeholder="Your name"
+                  className="p-3 rounded border border-gray-400 bg-white text-black focus:outline-none focus:ring-2 focus:ring-red-500 transition"
                 />
               </div>
               <button
                 type="submit"
-                className="mt-1 bg-red-900 hover:bg-red-600 text-white text-sm font-medium py-2 rounded transition-colors"
+                className="mt-2 bg-red-700 hover:bg-red-600 text-white font-semibold py-3 rounded transition"
               >
                 Subscribe
               </button>
             </form>
           </div>
         </div>
-        <footer className="text-center py-4 mt-8">
-          <p className="text-black text-sm">
-            &copy; {new Date().getFullYear()} Main Street Grill. All rights
-            reserved.
-          </p>
-          <p className="text-black text-sm mt-2">
-            141 Main Street, Agawam, MA 01001
-          </p>
-        </footer>
-      </div>
+
+        <div className="text-center py-6 text-sm text-black">
+          &copy; {new Date().getFullYear()} Main Street Grill. All rights reserved.
+          <div className="mt-1">141 Main Street, Agawam, MA 01001</div>
+        </div>
+      </footer>
     </>
   );
 };
