@@ -28,7 +28,6 @@ export default function Home() {
         style={{ backgroundImage: 'url("/centerStringSandwitch.jpg")' }}
       >
         <div
-          style={{ fontFamily: "Playfair Display, serif" }}
           className="absolute inset-0 flex items-center justify-center fontFamily-playfair"
         >
           <div className="flex flex-col items-center justify-center bg-red-950 bg-opacity-50 p-6 rounded-md shadow-lg">
