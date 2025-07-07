@@ -78,7 +78,7 @@ export default function Catering() {
          <p className=" text-justify-right max-w-1/2 text-xl md:text-2xl p-10">
             <Image
             alt="Heritage Room"
-            src={"/eventRoom.avif"}
+            src={"/eventHallFireplace.avif"}
             width={500}
             height={500}
             draggable={false}
