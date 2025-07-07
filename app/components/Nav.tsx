@@ -48,7 +48,8 @@ const Nav = () => {
             </div>
           </div>
 
-          <div className="hidden lg:flex items-center gap-6">
+          <div
+          className="hidden lg:flex items-center gap-6">
             <Link
               href="/"
               className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors border-b-2 border-transparent hover:border-red-600"
