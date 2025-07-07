@@ -51,6 +51,7 @@ export default function Home() {
             <Link
               key={index}
               href={item.address}
+               aria-label={`Navigate to ${item.name}`}
               className="shadow-2xl w-48 h-20 flex items-center justify-center bg-red-950 text-white text-xl px-6 py-3 rounded  hover:bg-red-800 transition duration-300 text-center"
             >
               {item.name}
