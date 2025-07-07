@@ -5,7 +5,8 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <Head>
+      <Head>\
+        <meta name="description" content="this site is the landing page for 141 Main Street Grill and sandwitches."></meta>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
