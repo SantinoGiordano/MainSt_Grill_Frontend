@@ -18,10 +18,6 @@ export default function Home() {
           href="https://fonts.gstatic.com"
           crossOrigin=""
         />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet"
-        />
       </Head> 
       <div
         className="relative h-[75vh] bg-fixed bg-center bg-cover"
