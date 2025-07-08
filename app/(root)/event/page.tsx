@@ -4,7 +4,7 @@ import Image from "next/image";
 const Events = () => {
   return (
     <>
-      <div className="bg-gray-200 w-screen">
+      <div className=" w-screen">
         <div
           className="relative h-[40vh] md:h-[60vh] lg:h-[75vh] bg-fixed bg-center bg-cover"
           style={{ backgroundImage: 'url("/eventBanners.jpg")' }}
