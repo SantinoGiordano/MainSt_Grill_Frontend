@@ -57,7 +57,7 @@ export default function Catering() {
         {/* Heritage Room Section 1 */}
         <div className="flex flex-col md:flex-row justify-center items-center p-4 gap-6">
           <div className="w-full max-w-md h-80 flex items-center justify-center bg-white rounded-lg shadow-lg p-6 overflow-auto">
-            <p className="text-justify text-lg md:text-xl leading-relaxed">
+            <p className="text-black text-justify text-lg md:text-xl ">
               Experience the charm of our Heritage Room, a beautifully designed
               space featuring a cozy fireplace and a warm, inviting atmosphere.
               Ideal for private events, this room comfortably accommodates up to
@@ -92,7 +92,7 @@ export default function Catering() {
             />
           </div>
           <div className="w-full max-w-md h-80 flex items-center justify-center bg-white rounded-lg shadow-lg p-6 overflow-auto">
-            <p className="text-justify text-lg md:text-xl leading-relaxed">
+            <p className="text-black text-justify text-lg md:text-xl">
               The fee for reserving our Heritage Room varies based on the day,
               time, and size of your event. Fees may be adjusted or waived
               depending on the details of your booking, such as event duration,
@@ -103,6 +103,7 @@ export default function Catering() {
           </div>
         </div>
       </div>
+      <div className="p-10"></div>
     </>
   );
 }

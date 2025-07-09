@@ -16,7 +16,7 @@ const Events = () => {
           </div>
           <div className="h-1 w-[75%] max-w-[400px] bg-red-900 rounded-full my-6 mx-auto"></div>
 
-          <p className="text-base sm:text-lg lg:text-xl text-center mt-4">
+          <p className="text-black text-base sm:text-lg lg:text-xl text-center mt-4">
             Join us for our special events and gatherings! We host a variety of
             events throughout the year, including live music nights, themed
             dinners, and community celebrations. Check back often for updates on
