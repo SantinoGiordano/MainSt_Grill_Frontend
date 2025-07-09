@@ -43,21 +43,22 @@ export default function Home() {
 
       {/* This shows on small screens */}
       
-      <div className="pt-40 p-8">
-      <div className=" items-center justify-center fontFamily-playfair">
-          <div className="flex flex-col items-center justify-center bg-red-950 bg-opacity-50 p-6 rounded-md shadow-lg">
-            <p className="text-2xl md:text-3xl font-bold text-black bg-white px-6 py-4 rounded tracking-wide leading-relaxed">
-              Open Monday - Saturday
-            </p>
-            <p className="text-white text-xl md:text-2xl mt-2 tracking-wide leading-relaxed">
-              10AM - 6PM
-            </p>
-            <p className="text-lg text-white md:text-xl mt-1 tracking-wide leading-relaxed">
-              Temporarily Closed Sundays
-            </p>
-          </div>
-        </div>
-      </div>
+<div className="pt-40 p-8 md:hidden">
+  <div className="items-center justify-center fontFamily-playfair">
+    <div className="flex flex-col items-center justify-center bg-red-950 bg-opacity-50 p-6 rounded-md shadow-lg">
+      <p className="text-2xl font-bold text-black bg-white px-6 py-4 rounded tracking-wide leading-relaxed">
+        Open Monday - Saturday
+      </p>
+      <p className="text-white text-xl mt-2 tracking-wide leading-relaxed">
+        10AM - 6PM
+      </p>
+      <p className="text-lg text-white mt-1 tracking-wide leading-relaxed">
+        Temporarily Closed Sundays
+      </p>
+    </div>
+  </div>
+</div>
+
 
       <hr className="border-t-2 border-red-950 my-8 ml-10 mr-10" />
       <div className="flex flex-wrap justify-center gap-4 mt-8 px-4 pt-10">
