@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Main Street Grill</title>
+        <title>141 Main Grill</title>
         <meta
           name="description"
           content="Main Street Grill in Agawam, MA. Open Monday-Saturday."
@@ -35,7 +35,7 @@ export default function Home() {
               10AM - 6PM
             </p>
             <p className="text-lg text-white md:text-xl mt-1 tracking-wide leading-relaxed">
-              Temporarily Closed Sundays
+              Sundays Closed at 3
             </p>
           </div>
         </div>
@@ -53,7 +53,7 @@ export default function Home() {
         10AM - 6PM
       </p>
       <p className="text-lg text-white mt-1 tracking-wide leading-relaxed">
-        Temporarily Closed Sundays
+        Sundays Closed at 3
       </p>
     </div>
   </div>
