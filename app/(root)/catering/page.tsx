@@ -28,22 +28,22 @@ export default function Catering() {
             />
           </div>
           <div className="w-full max-w-md h-80 flex items-center justify-center">
-            <div className="bg-black flex flex-col items-center justify-center p-6 rounded-lg shadow-lg hover:ease-in-out hover:scale-105 transition-transform w-full h-full">
+            <div className="bg-red-950 flex flex-col items-center justify-center p-10 rounded-lg shadow-lg hover:ease-in-out hover:scale-105 transition-transform">
               <Link
-                className="text-2xl font-bold text-white hover:text-pink-200 transition-colors mb-4"
+                className="text-center text-2xl font-bold text-white transition-colors mb-4"
                 href={"/CateringMenu.pdf"}
               >
                 Click Here to Check Out Our Catering Menu
+                <Image
+                  loading="lazy"
+                  draggable={false}
+                  alt="Catering Menu"
+                  className="w-40 h-40 object-cover rounded mx-auto mt-4"
+                  src="/cateringMenuImg.avif"
+                  height={160}
+                  width={160}
+                />
               </Link>
-              <Image
-                loading="lazy"
-                draggable={false}
-                alt="Catering Menu"
-                className="w-40 h-40 object-cover rounded"
-                src="/cateringMenuImg.avif"
-                height={160}
-                width={160}
-              />
             </div>
           </div>
         </div>
