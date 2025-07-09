@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Main Street Grill",
+  title: "141 Main Grill",
   description:
     "Main Street Grill in Agawam, MA. Open Monday-Saturday. Order online, view weekly specials, catering, and more!",
 };
