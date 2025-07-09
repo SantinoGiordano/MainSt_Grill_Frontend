@@ -5,19 +5,16 @@ export default function Catering() {
   return (
     <>
       <div>
-        {/* Hero Banner */}
         <div
-          className="relative h-[75vh] bg-fixed bg-center bg-cover"
+          className="hidden md:block relative h-[75vh] bg-fixed bg-center bg-cover"
           style={{ backgroundImage: 'url("/sandwitch.jpg")' }}
         ></div>
 
-        {/* Catering Services Heading */}
-        <div className="p-10 text-center text-3xl font-semibold tracking-wide text-red-800">
+        <div className="pt-50 md:pt-10 p-10 text-center text-3xl font-semibold tracking-wide text-red-800">
           Browse Our Catering Services
-          <hr className="my-6 mx-auto w-1/4 border-t-4 border-red-900 rounded-full" />
+          <div className="h-1 w-[75%] max-w-[400px] bg-red-900 rounded-full my-6 mx-auto"></div>
         </div>
 
-        {/* Catering Images and Link */}
         <div className="flex flex-col md:flex-row justify-center items-center text-center p-4 gap-6">
           <div className="w-full max-w-md h-80 flex items-center justify-center">
             <Image
@@ -54,7 +51,7 @@ export default function Catering() {
         {/* Heritage Room Heading */}
         <div className="p-10 text-center text-3xl font-semibold tracking-wide text-red-800">
           Rent the Heritage Room
-          <hr className="my-6 mx-auto w-1/4 border-t-4 border-red-900 rounded-full" />
+          <div className="h-1 w-[75%] max-w-[400px] bg-red-900 rounded-full my-6 mx-auto"></div>
         </div>
 
         {/* Heritage Room Section 1 */}
