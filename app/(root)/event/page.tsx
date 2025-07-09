@@ -11,9 +11,10 @@ const Events = () => {
         ></div>
 
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8 ">
-          <div className=" p-10 text-center text-3xl font-semibold tracking-wide text-red-800">
+          <div className=" pt-10 text-center text-3xl font-semibold tracking-wide text-red-800">
             Events at Main Street Grill
           </div>
+          <div className="h-1 w-[75%] max-w-[400px] bg-red-900 rounded-full my-6 mx-auto"></div>
 
           <p className="text-base sm:text-lg lg:text-xl text-center mt-4">
             Join us for our special events and gatherings! We host a variety of
