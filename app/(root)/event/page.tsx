@@ -6,17 +6,17 @@ const Events = () => {
     <>
       <div className=" w-screen">
         <div
-          className="relative h-[40vh] md:h-[60vh] lg:h-[75vh] bg-fixed bg-center bg-cover"
+          className="hidden md:block relative h-[40vh] md:h-[60vh] lg:h-[75vh] bg-fixed bg-center bg-cover"
           style={{ backgroundImage: 'url("/eventBanners.jpg")' }}
         ></div>
 
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8 ">
-          <div className=" pt-10 text-center text-3xl font-semibold tracking-wide text-red-800">
+          <div className=" pt-25 text-center text-3xl font-semibold tracking-wide text-red-800">
             Events at Main Street Grill
           </div>
           <div className="h-1 w-[75%] max-w-[400px] bg-red-900 rounded-full my-6 mx-auto"></div>
 
-          <p className="text-black text-base sm:text-lg lg:text-xl text-center mt-4">
+          <p className=" flex text-justify text-black text-base sm:text-lg lg:text-xl mt-4">
             Join us for our special events and gatherings! We host a variety of
             events throughout the year, including live music nights, themed
             dinners, and community celebrations. Check back often for updates on
@@ -37,7 +37,7 @@ const Events = () => {
               {/* Overlay */}
               <div className="absolute inset-0 bg-black opacity-0 rounded-lg transition-opacity duration-300 group-hover:opacity-50" />
               {/* Centered button */}
-              <button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black text-white px-4 py-2 rounded hover:bg-gray-900 transition z-10">
+              <button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-red-950 text-white px-4 py-2 rounded hover:bg-red-900 transition z-10">
                 Details
               </button>
             </div>
