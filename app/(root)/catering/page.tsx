@@ -7,7 +7,7 @@ export default function Catering() {
       <div>
         <div
           className="hidden md:block relative h-[75vh] bg-fixed bg-center bg-cover"
-          style={{ backgroundImage: 'url("/sandwitch.jpg")' }}
+          style={{ backgroundImage: 'url("/mainGrillMac.jpg")' }}
         ></div>
 
         <div className="pt-50 md:pt-10 p-10 text-center text-3xl font-semibold tracking-wide text-red-800">

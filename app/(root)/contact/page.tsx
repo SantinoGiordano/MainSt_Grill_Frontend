@@ -22,9 +22,17 @@ export default function Contact() {
       </Head>
       <div>
         <div
-          className="relative h-[75vh] bg-fixed bg-center bg-cover"
+          className="hidden md:block relative h-[75vh] bg-fixed bg-center bg-cover"
           style={{ backgroundImage: 'url("/dinningroom.avif")' }}
         ></div>
+        <div className="text-center pt-30">
+          <div className="inline-block">
+            <div className="text-3xl font-semibold tracking-wide text-red-800">
+              Contact Us
+            </div>
+            <div className="h-1 bg-red-900 rounded-full mt-2"></div>
+          </div>
+        </div>
 
         <div className="flex flex-col md:flex-row w-full p-6 md:gap-[5px]">
           {/* Left Side */}
@@ -35,7 +43,7 @@ export default function Contact() {
                 style={{ fontFamily: "Dancing Script, cursive" }}
               >
                 Located At:
-                <hr className="mt-4"/>
+                <hr className="mt-4" />
               </div>
               <div className="text-xl">
                 141 Main Street, Agawam
@@ -44,6 +52,7 @@ export default function Contact() {
                 <br /> 10 AM to 6 PM.
               </div>
             </div>
+            
             <div className="rounded-lg shadow-lg overflow-hidden w-full max-w-xl">
               <Image
                 src="/staffPhoto.avif"
@@ -62,7 +71,7 @@ export default function Contact() {
             <div className="rounded-lg shadow-lg overflow-hidden w-full max-w-xl">
               <iframe
                 title="Google Map"
-               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2935.280784770657!2d-72.62365!3d42.08682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e6e9d1df0d635b%3A0x123456789abcdef!2s141%20Main%20St%2C%20Agawam%2C%20MA%2001001!5e0!3m2!1sen!2sus!4v1689100000000!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2935.280784770657!2d-72.62365!3d42.08682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e6e9d1df0d635b%3A0x123456789abcdef!2s141%20Main%20St%2C%20Agawam%2C%20MA%2001001!5e0!3m2!1sen!2sus!4v1689100000000!5m2!1sen!2sus"
                 width="100%"
                 height="300"
                 allowFullScreen
@@ -77,7 +86,7 @@ export default function Contact() {
                 style={{ fontFamily: "Dancing Script, cursive" }}
               >
                 Contact Us:
-                <hr className="mt-4"/>
+                <hr className="mt-4" />
               </div>
               <div className="text-xl">
                 Do you have a question or need some help? Have a problem - or
