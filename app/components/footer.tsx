@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import React from "react";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -11,7 +12,11 @@ const Footer = () => {
           content="this site is the landing page for 141 Main Street Grill and sandwiches."
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
       </Head>
       <footer
         style={{ fontFamily: "Playfair Display, serif" }}
@@ -82,8 +87,25 @@ const Footer = () => {
           </div>
         </div>
 
+        <div className=" pt-5 flex gap-6 justify-center">
+          <a
+            href="https://www.facebook.com/141main/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook className="w-8 h-8 text-red-800 hover:text-red-600 transition" />
+          </a>
+          <a
+            href="https://www.instagram.com/141mainst/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram className="w-8 h-8 text-red-800 hover:text-red-600 transition" />
+          </a>
+        </div>
         <div className="text-center py-6 text-sm text-black">
-          &copy; {new Date().getFullYear()} Main Street Grill. All rights reserved.
+          &copy; {new Date().getFullYear()} Main Street Grill. All rights
+          reserved.
           <div className="mt-1">141 Main Street, Agawam, MA 01001</div>
         </div>
       </footer>
