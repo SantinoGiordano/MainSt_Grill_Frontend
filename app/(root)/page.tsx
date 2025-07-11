@@ -57,8 +57,6 @@ export default function Home() {
   </div>
 </div>
 
-
-      <hr className="border-t-2 border-red-950 my-8 ml-10 mr-10" />
       <div className="flex flex-wrap justify-center gap-4 mt-8 px-4 pt-10">
         {buttonsHomePage.length > 0 ? (
           buttonsHomePage.map((item, index) => (
@@ -66,7 +64,7 @@ export default function Home() {
               key={index}
               href={item.address}
               aria-label={`Navigate to ${item.name}`}
-              className="shadow-2xl w-48 h-20 flex items-center justify-center bg-red-950 text-white text-xl px-6 py-3 rounded  hover:bg-red-800 transition duration-300 text-center"
+              className="shadow-2xl w-48 h-20 flex items-center justify-center bg-red-950 text-white text-xl px-6 py-3 rounded-md  hover:bg-red-800 transition duration-300 text-center"
             >
               {item.name}
             </Link>
