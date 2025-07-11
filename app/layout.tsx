@@ -44,7 +44,9 @@ export default function RootLayout({
           />
         </Head>
         <Nav />
+        <div className="bg-gray-100">
         {children}
+        </div>
         <Footer />
       </body>
     </html>
