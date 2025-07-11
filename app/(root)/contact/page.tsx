@@ -35,7 +35,7 @@ export default function Contact() {
         </div>
 
         <div className="flex flex-col md:flex-row w-full p-6 md:gap-[5px]">
-          {/* Left Side */}
+
           <div className="flex-1 flex flex-col gap-6 p-4 items-center justify-center">
             <div className="bg-red-950 text-white p-6 rounded-lg shadow-lg w-full max-w-xl">
               <div
@@ -66,7 +66,6 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Right Side */}
           <div className="flex-1 flex flex-col gap-6 p-4 items-center justify-center">
             <div className="rounded-lg shadow-lg overflow-hidden w-full max-w-xl">
               <iframe

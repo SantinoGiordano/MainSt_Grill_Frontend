@@ -1,7 +1,6 @@
 export default function ThanksgivingPage() {
   return (
     <div className="bg-gray-50 text-gray-900">
-      {/* Hero Section */}
       <div
         className="hidden md:block relative h-[75vh] bg-fixed bg-center bg-cover"
         style={{ backgroundImage: 'url("/thanksgiving.jpg")' }}
@@ -9,7 +8,6 @@ export default function ThanksgivingPage() {
         <div className="absolute inset-0  flex items-center justify-center"></div>
       </div>
 
-      {/* Main content */}
       <div className="px-4 py-10 max-w-3xl mx-auto pt-30">
         <h1 className="text-4xl font-bold text-center text-red-800 mb-6">
           Thanksgiving Dinner Takeout

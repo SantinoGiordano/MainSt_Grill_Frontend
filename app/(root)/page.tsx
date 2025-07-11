@@ -19,7 +19,7 @@ export default function Home() {
           crossOrigin=""
         />
       </Head>
-      {/* This only shows on md+ with background */}
+
     <div className="bg-gray-100">
       
       <div
@@ -40,8 +40,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* This shows on small screens */}
       
 <div className="pt-40 p-8 md:hidden">
   <div className="items-center justify-center fontFamily-playfair">

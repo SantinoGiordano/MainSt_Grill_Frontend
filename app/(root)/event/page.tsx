@@ -34,9 +34,7 @@ const Events = () => {
                 alt="Event at Main Street Grill"
                 className="w-full rounded-lg shadow-lg"
               />
-              {/* Overlay */}
               <div className="absolute inset-0 bg-black opacity-0 rounded-lg transition-opacity duration-300 group-hover:opacity-50" />
-              {/* Centered button */}
               <button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-red-950 text-white px-4 py-2 rounded hover:bg-red-900 transition z-10">
                 Details
               </button>

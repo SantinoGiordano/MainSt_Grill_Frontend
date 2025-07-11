@@ -47,14 +47,11 @@ export default function Catering() {
             </div>
           </div>
         </div>
-
-        {/* Heritage Room Heading */}
         <div className="p-10 text-center text-3xl font-semibold tracking-wide text-red-800">
           Rent the Heritage Room
           <div className="h-1 w-[75%] max-w-[400px] bg-red-900 rounded-full my-6 mx-auto"></div>
         </div>
 
-        {/* Heritage Room Section 1 */}
         <div className="flex flex-col md:flex-row justify-center items-center p-4 gap-6">
           <div className="w-full max-w-md h-80 flex items-center justify-center bg-white rounded-lg shadow-lg p-6 overflow-auto">
             <p className="text-black text-justify text-lg md:text-xl ">
@@ -78,7 +75,6 @@ export default function Catering() {
           </div>
         </div>
 
-        {/* Heritage Room Section 2 */}
         <div className="flex flex-col md:flex-row justify-center items-center p-4 gap-6">
           <div className="w-full max-w-md h-80 flex items-center justify-center">
             <Image

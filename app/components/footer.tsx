@@ -23,7 +23,6 @@ const Footer = () => {
         className="bg-gray-300 text-black pt-10"
       >
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10 px-6 pb-10 border-b border-slate-600">
-          {/* Contact Info */}
           <div className="flex-1 space-y-4 md:pr-8">
             <h3 className="text-2xl font-semibold tracking-wide mb-2 border-b border-red-950 inline-block pb-1">
               Visit Us
@@ -47,7 +46,6 @@ const Footer = () => {
             <p className="text-lg">141 Main Street, Agawam, MA 01001</p>
           </div>
 
-          {/* Signup Form */}
           <div className="flex-1">
             <h3 className="text-2xl font-semibold tracking-wide mb-4 border-b border-red-600 inline-block pb-1">
               Stay Updated
