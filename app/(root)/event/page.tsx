@@ -30,7 +30,7 @@ const Events = () => {
                 height={300}
                 draggable={false}
                 loading="lazy"
-                src="/eventroom.avif"
+                src="/eventRoom.avif"
                 alt="Event at Main Street Grill"
                 className="w-full rounded-lg shadow-lg"
               />
