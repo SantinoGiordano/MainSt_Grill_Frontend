@@ -33,7 +33,6 @@ const Events = () => {
                 loading="lazy"
                 draggable={false}
                 className="rounded-lg shadow-lg"
-                style={{ width: "100%", height: "auto" }}
               />
 
               <div className="absolute inset-0 bg-black opacity-0 rounded-lg transition-opacity duration-300 group-hover:opacity-50" />
