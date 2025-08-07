@@ -65,7 +65,7 @@ export default function Catering() {
           <div className="w-full max-w-md h-80 flex items-center justify-center">
             <Image
               alt="Heritage Room"
-              src={"/eventRoom.avif"}
+              src={"/eventHall.avif"}
               width={500}
               height={500}
               draggable={false}
