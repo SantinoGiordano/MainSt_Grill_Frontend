@@ -26,14 +26,16 @@ const Events = () => {
           <div className="flex justify-center mt-8">
             <div className="relative w-full max-w-xs sm:max-w-md md:max-w-lg group">
               <Image
-                width={500}
-                height={300}
-                draggable={false}
-                loading="lazy"
                 src="/eventRoom.avif"
                 alt="Event at Main Street Grill"
-                className="w-full rounded-lg shadow-lg"
+                width={500}
+                height={300}
+                loading="lazy"
+                draggable={false}
+                className="rounded-lg shadow-lg"
+                style={{ width: "100%", height: "auto" }}
               />
+
               <div className="absolute inset-0 bg-black opacity-0 rounded-lg transition-opacity duration-300 group-hover:opacity-50" />
               <button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-red-950 text-white px-4 py-2 rounded hover:bg-red-900 transition z-10">
                 Details
