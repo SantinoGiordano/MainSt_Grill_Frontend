@@ -57,7 +57,7 @@ export default function Home() {
   </div>
 </div>
 
-      <div className="flex flex-wrap justify-center gap-4 mt-8 px-4 pt-10">
+       <div className="flex flex-wrap justify-center gap-4 mt-8 px-4 pt-10">
         {buttonsHomePage.length > 0 ? (
           buttonsHomePage.map((item, index) => (
             <Link
