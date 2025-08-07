@@ -1,50 +1,12 @@
-import Head from "next/head";
-import Link from "next/link";
 import React from "react";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <>
-      <Head>
-        <meta
-          name="description"
-          content="this site is the landing page for 141 Main Street Grill and sandwiches."
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin=""
-        />
-      </Head>
-      <footer
-        style={{ fontFamily: "Playfair Display, serif" }}
-        className="bg-gray-300 text-black pt-10"
-      >
+      <footer className="bg-blue-100 text-black pt-10">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10 px-6 pb-10 border-b border-slate-600">
-          <div className="flex-1 space-y-4 md:pr-8">
-            <h3 className="text-2xl font-semibold tracking-wide mb-2 border-b border-red-950 inline-block pb-1">
-              Visit Us
-            </h3>
-            <p className="text-lg">
-              Call After 3PM <span className="font-bold">(413) 821-9881</span>
-            </p>
-            <p className="text-lg">
-              <Link
-                href="https://www.google.com/maps/dir//141+Main+St,+Agawam,+MA+01001"
-                className="text-red-400 hover:text-red-200 transition"
-                target="_blank"
-              >
-                Click here
-              </Link>{" "}
-              for Driving Directions
-            </p>
-            <p className="text-lg">
-              Free Parking / Outdoor Patio (Seasonal) / Private Room Available
-            </p>
-            <p className="text-lg">141 Main Street, Agawam, MA 01001</p>
-          </div>
+    
 
           <div className="flex-1">
             <h3 className="text-2xl font-semibold tracking-wide mb-4 border-b border-red-600 inline-block pb-1">
