@@ -3,6 +3,8 @@
 import Link from "next/link";
 import buttonsHomePage from "@/Data/buttonsHomePage";
 import Head from "next/head";
+import Image from "next/image";
+
 export default function Home() {
   return (
     <>
@@ -21,10 +23,16 @@ export default function Home() {
       </Head>
 
       <div className="bg-gray-100">
-        <div
-          className="flex relative h-[50vh] md:h-[75vh] bg-fixed bg-center bg-cover"
-          style={{ backgroundImage: 'url("/centerStringSandwitch.jpg")' }}
-        >
+        {/* HERO IMAGE */}
+        <div className="relative w-full h-[50vh] md:h-[75vh]">
+          <Image
+            src="/centerStringSandwitch.jpg"
+            alt="Center String Sandwich"
+            fill
+            priority
+            className="object-cover object-center"
+          />
+
           <div className="absolute inset-0 items-center justify-center fontFamily-playfair hidden md:flex">
             <div className="flex flex-col items-center justify-center bg-red-950 bg-opacity-50 p-6 rounded-md shadow-lg">
               <p className="text-2xl md:text-3xl font-bold text-black bg-white px-6 py-4 rounded tracking-wide leading-relaxed">
@@ -63,7 +71,7 @@ export default function Home() {
                 key={index}
                 href={item.address}
                 aria-label={`Navigate to ${item.name}`}
-                className="shadow-2xl w-48 h-20 flex items-center justify-center bg-red-950 text-white text-xl px-6 py-3 rounded-md  hover:bg-red-800 transition duration-300 text-center"
+                className="shadow-2xl w-48 h-20 flex items-center justify-center bg-red-950 text-white text-xl px-6 py-3 rounded-md hover:bg-red-800 transition duration-300 text-center"
               >
                 {item.name}
               </Link>
