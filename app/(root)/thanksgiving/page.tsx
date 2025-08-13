@@ -12,25 +12,25 @@ export default function ThanksgivingPage() {
         <h1 className="text-4xl font-bold text-center text-red-800 mb-6">
           Thanksgiving Dinner Takeout
         </h1>
-        <p className="text-lg text-center mb-8">
+        <p className="text-lg text-justify mb-8">
           We’re excited to continue our Thanksgiving tradition, offering a
           delicious dinner takeout crafted with the finest ingredients. This
           year, we’re proud to once again source our high-quality turkey from
           Outpost Farm in Holliston, bringing the taste of local farm freshness
           straight to your table.
         </p>
-        <p className="text-lg mb-6">
+        <p className="text-lg text-justify mb-6">
           Choose from a range of options to suit your gathering, and enjoy a
           meal prepared with the same beloved recipe and care.
         </p>
 
         <div className="border-l-4 border-red-700 pl-4 mb-6">
-          <p className="text-md">
+          <p className="text-md text-justify">
             The main course in each option includes local farm fresh turkey
             breast, gravy, cranberry sauce, homemade dinner rolls, butter, and
             three sides of your choice.
           </p>
-          <p className="mt-2">
+          <p className="mt-2 text-justify">
             The sides are stuffing, mashed potato, garlic parmesan green beans,
             glazed carrots, and mac n cheese.
           </p>
@@ -60,7 +60,7 @@ export default function ThanksgivingPage() {
             <h3 className="text-xl font-semibold mb-2 text-red-700">
               Individual Dinner Plate — $19.95
             </h3>
-            <ul className="list-disc list-inside space-y-1">
+            <ul className="list-disc list-inside space-y-1 text-justify">
               <li>Farm fresh sliced turkey breast</li>
               <li>Three sides</li>
               <li>
