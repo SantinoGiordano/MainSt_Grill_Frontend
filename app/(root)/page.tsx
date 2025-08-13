@@ -20,62 +20,60 @@ export default function Home() {
         />
       </Head>
 
-    <div className="bg-gray-100">
-      
-      <div
-        className="hidden md:flex relative h-[75vh] bg-fixed bg-center bg-cover"
-        style={{ backgroundImage: 'url("/centerStringSandwitch.jpg")' }}
-      >
-        <div className="absolute inset-0 flex items-center justify-center fontFamily-playfair">
-          <div className="flex flex-col items-center justify-center bg-red-950 bg-opacity-50 p-6 rounded-md shadow-lg">
-            <p className="text-2xl md:text-3xl font-bold text-black bg-white px-6 py-4 rounded tracking-wide leading-relaxed">
-              Open Monday - Saturday
-            </p>
-            <p className="text-white text-xl md:text-2xl mt-2 tracking-wide leading-relaxed">
-              10AM - 6PM
-            </p>
-            <p className="text-lg text-white md:text-xl mt-1 tracking-wide leading-relaxed">
-              Sundays Closed at 3
-            </p>
+      <div className="bg-gray-100">
+        <div
+          className="flex relative h-[50vh] md:h-[75vh] bg-fixed bg-center bg-cover"
+          style={{ backgroundImage: 'url("/centerStringSandwitch.jpg")' }}
+        >
+          <div className="absolute inset-0 items-center justify-center fontFamily-playfair hidden md:flex">
+            <div className="flex flex-col items-center justify-center bg-red-950 bg-opacity-50 p-6 rounded-md shadow-lg">
+              <p className="text-2xl md:text-3xl font-bold text-black bg-white px-6 py-4 rounded tracking-wide leading-relaxed">
+                Open Monday - Saturday
+              </p>
+              <p className="text-white text-xl md:text-2xl mt-2 tracking-wide leading-relaxed">
+                10AM - 6PM
+              </p>
+              <p className="text-lg text-white md:text-xl mt-1 tracking-wide leading-relaxed">
+                Sundays Closed at 3
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      
-<div className="pt-40 p-8 md:hidden">
-  <div className="items-center justify-center fontFamily-playfair">
-    <div className="flex flex-col items-center justify-center bg-red-950 bg-opacity-50 p-6 rounded-md shadow-lg">
-      <p className="text-2xl font-bold text-black bg-white px-6 py-4 rounded tracking-wide leading-relaxed">
-        Open Monday - Saturday
-      </p>
-      <p className="text-white text-xl mt-2 tracking-wide leading-relaxed">
-        10AM - 6PM
-      </p>
-      <p className="text-lg text-white mt-1 tracking-wide leading-relaxed">
-        Sundays Closed at 3
-      </p>
-    </div>
-  </div>
-</div>
 
-       <div className="flex flex-wrap justify-center gap-4 mt-8 px-4 pt-10">
-        {buttonsHomePage.length > 0 ? (
-          buttonsHomePage.map((item, index) => (
-            <Link
-              key={index}
-              href={item.address}
-              aria-label={`Navigate to ${item.name}`}
-              className="shadow-2xl w-48 h-20 flex items-center justify-center bg-red-950 text-white text-xl px-6 py-3 rounded-md  hover:bg-red-800 transition duration-300 text-center"
-            >
-              {item.name}
-            </Link>
-          ))
-        ) : (
-          <p className="text-center text-gray-500">No buttons available.</p>
-        )}
+        <div className="pt-40 p-8 flex md:hidden">
+          <div className="items-center justify-center fontFamily-playfair w-full">
+            <div className="flex flex-col items-center justify-center bg-red-950 bg-opacity-50 p-4 rounded-md shadow-lg">
+              <p className="text-xl font-bold text-black bg-white px-4 py-2 rounded tracking-wide leading-relaxed">
+                Open Mon - Sat
+              </p>
+              <p className="text-white text-lg mt-2 tracking-wide leading-relaxed">
+                10AM - 6PM
+              </p>
+              <p className="text-base text-white mt-1 tracking-wide leading-relaxed">
+                Sun Close at 3
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-wrap justify-center gap-4 mt-8 px-4 pt-10">
+          {buttonsHomePage.length > 0 ? (
+            buttonsHomePage.map((item, index) => (
+              <Link
+                key={index}
+                href={item.address}
+                aria-label={`Navigate to ${item.name}`}
+                className="shadow-2xl w-48 h-20 flex items-center justify-center bg-red-950 text-white text-xl px-6 py-3 rounded-md  hover:bg-red-800 transition duration-300 text-center"
+              >
+                {item.name}
+              </Link>
+            ))
+          ) : (
+            <p className="text-center text-gray-500">No buttons available.</p>
+          )}
+        </div>
+        <div className="p-10"></div>
       </div>
-      <div className="p-10"></div>
-      
-    </div>
     </>
   );
 }
