@@ -48,7 +48,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="pt-40 p-8 flex md:hidden">
+        <div className=" p-8 flex md:hidden">
           <div className="items-center justify-center fontFamily-playfair w-full">
             <div className="flex flex-col items-center justify-center bg-red-950 bg-opacity-50 p-4 rounded-md shadow-lg">
               <p className="text-xl font-bold text-black bg-white px-4 py-2 rounded tracking-wide leading-relaxed">
