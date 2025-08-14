@@ -5,9 +5,30 @@ import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import Head from "next/head";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const menuVariants = {
+    hidden: { height: 0, opacity: 0 },
+    visible: { height: "auto", opacity: 1 },
+    exit: { height: 0, opacity: 0 },
+  };
+
+  const navLinks: [string, string, boolean?][] = [
+    ["Home", "/"],
+    ["Menu", "/menu"],
+    ["Weekly Special", "/weekly-special"],
+    ["Catering", "/catering"],
+    ["Events", "/event"],
+    ["Contact", "/contact"],
+    [
+      "Order Online",
+      "https://order.online/store/main-street-deli-restaurant-&-catering-agawam-25125723/?hideModal=true&pickup=true",
+      true,
+    ],
+  ];
 
   return (
     <>
@@ -21,7 +42,7 @@ const Nav = () => {
       </Head>
 
       <nav
-        className="bg-gray-200 w-screen px-6 py-4 shadow-md  absolute z-100"
+        className="bg-gray-200 w-screen px-6 py-4 shadow-md absolute z-100"
         style={{
           clipPath: "polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%)",
         }}
@@ -36,124 +57,86 @@ const Nav = () => {
               className="m-2 rounded-full w-16 h-16 lg:w-24 lg:h-24 object-cover"
               draggable={false}
             />
-            <div
-              className="text-2xl lg:text-4xl font-bold text-red-900 drop-shadow-md"
-              style={{ fontFamily: "" }}
-           >
+            <div className="text-2xl lg:text-4xl font-bold text-red-900 drop-shadow-md">
               141 Main Street
             </div>
           </div>
 
-          <div
-          className="hidden lg:flex items-center gap-6">
-            <Link
-              href="/"
-              className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors border-b-2 border-transparent hover:border-red-600"
-            >
-              Home
-            </Link>
-            <Link
-              href="/menu"
-              className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors border-b-2 border-transparent hover:border-red-600"
-            >
-              Menu
-            </Link>
-            <Link
-              href="/weekly-special"
-              className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors border-b-2 border-transparent hover:border-red-600"
-            >
-              Weekly Specail
-            </Link>
-            <Link
-              href="/catering"
-              className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors border-b-2 border-transparent hover:border-red-600"
-            >
-              Catering
-            </Link>
-            <Link
-              href="/event"
-              className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors border-b-2 border-transparent hover:border-red-600"
-            >
-              Events
-            </Link>
-            <Link
-              href="/contact"
-              className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors border-b-2 border-transparent hover:border-red-600"
-            >
-              Contact
-            </Link>
-
-            <Link
-              href="https://order.online/store/main-street-deli-restaurant-&-catering-agawam-25125723/?hideModal=true&pickup=true"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors border-b-2 border-transparent hover:border-red-600"
-            >
-              Order Online
-            </Link>
+          <div className="hidden lg:flex items-center gap-6">
+            {navLinks.map(([label, href, external]) =>
+              external ? (
+                <Link
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors border-b-2 border-transparent hover:border-red-600"
+                >
+                  {label}
+                </Link>
+              ) : (
+                <Link
+                  key={label}
+                  href={href}
+                  className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors border-b-2 border-transparent hover:border-red-600"
+                >
+                  {label}
+                </Link>
+              )
+            )}
           </div>
 
           <div className="lg:hidden">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className="text-gray-800 hover:text-red-600 focus:outline-none"
-              aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+              aria-label={
+                menuOpen ? "Close navigation menu" : "Open navigation menu"
+              }
             >
               {menuOpen ? <X size={32} /> : <Menu size={32} />}
             </button>
           </div>
         </div>
 
-        {menuOpen && (
-          <div className="p-10 lg:hidden mt-4 flex flex-col gap-4 items-center">
-            <Link
-              href="/"
-              className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors"
-              onClick={() => setMenuOpen(false)}
+        <AnimatePresence>
+          {menuOpen && (
+            <motion.div
+              key="mobile-menu"
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              variants={menuVariants}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              className="overflow-hidden lg:hidden flex flex-col items-center gap-4 mt-4"
             >
-              Home
-            </Link>
-            <Link
-              href="/menu"
-              className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors "
-            >
-              Menu
-            </Link>
-            <Link
-              href="/weekly-special"
-              className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors "
-            >
-              Weekly Specail
-            </Link>
-            <Link
-              href="/catering"
-              className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors "
-            >
-              Catering
-            </Link>
-            <Link
-              href="/event"
-              className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors "
-            >
-              Events
-            </Link>
-            <Link
-              href="/contact"
-              className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors "
-            >
-              Contact
-            </Link>
-            <Link
-              href="https://order.online/store/main-street-deli-restaurant-&-catering-agawam-25125723/?hideModal=true&pickup=true"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors"
-              onClick={() => setMenuOpen(false)}
-            >
-              Order Online
-            </Link>
-          </div>
-        )}
+              {navLinks.map(([label, href, external]) =>
+                external ? (
+                  <Link
+                    key={label}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors py-2"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {label}
+                  </Link>
+                ) : (
+                  <Link
+                    key={label}
+                    href={href}
+                    className=" text-lg font-semibold text-gray-800 hover:text-red-600 transition-colors py-2"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {label}
+                  </Link>
+                  
+                )
+              )}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </nav>
     </>
   );
