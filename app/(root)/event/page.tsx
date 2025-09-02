@@ -24,7 +24,7 @@ const Events = () => {
           </p>
 
           <div className="flex justify-center mt-8">
-            <div className="relative w-full max-w-xs sm:max-w-md md:max-w-lg group">
+            <div className="relative w-full max-w-xs sm:max-w-md md:max-w-lg group rounded-lg overflow-hidden shadow-lg">
               <Image
                 src="/eventRoom.avif"
                 alt="Event at Main Street Grill"
@@ -32,10 +32,13 @@ const Events = () => {
                 height={300}
                 loading="lazy"
                 draggable={false}
-                className="rounded-lg shadow-lg"
+                className="w-full h-auto"
               />
 
-              <div className="absolute inset-0 bg-black opacity-0 rounded-lg transition-opacity duration-300 group-hover:opacity-50" />
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-50" />
+
+              {/* Button */}
               <button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-red-950 text-white px-4 py-2 rounded hover:bg-red-900 transition z-10">
                 Details
               </button>
