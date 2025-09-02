@@ -19,7 +19,7 @@ const Nav = () => {
   const navLinks: [string, string, boolean?][] = [
     ["Home", "/"],
     ["Menu", "/menu"],
-    ["Weekly Special", "/weekly-special"],
+    ["Weekly Special", "/weeklySpecial"],
     ["Catering", "/catering"],
     ["Events", "/event"],
     ["Contact", "/contact"],
